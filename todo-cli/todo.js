@@ -6,6 +6,7 @@ const todoList = () => {
     const markAsComplete = (index) => {
         all[index].completed = true
     }
+    let today = new Date().toLocaleDateString("en-CA");
 
     const overdue = () => {
         // Write the date check condition here and return the array
@@ -44,4 +45,4 @@ const todoList = () => {
         toDisplayableList
     };
 };
-module.exports(todoList);
+module.exports=todoList;
